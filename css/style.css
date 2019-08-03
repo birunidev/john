@@ -1,0 +1,438 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #FBFBFB;
+    font-family: 'Work Sans';
+    color: #707070;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.gallery img {
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.filter:hover img {
+    opacity: 0.3;
+}
+
+.filter:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4d4d4d;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 800;
+    font-size: 35px;
+    color: #707070 !important;
+}
+
+.navbar .btn {
+    display: block;
+    width: 100%;
+    background: #707070;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+.navbar .btn:hover {
+    background: white;
+    border: 1px solid #707070;
+    color: #707070;
+    margin-bottom: -2px;
+}
+
+/* Navbar ends */
+
+/* Jumbotron */
+.jumbotron {
+    padding-top: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background: url(../img/headline.png) no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    margin-top: 200px;
+    font-weight: 700;
+}
+
+.jumbotron .lead {
+    font-size: 24px;
+    margin-top: -20px;
+
+
+}
+
+.jumbotron .btn {
+    background: #707070;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.jumbotron .btn:hover {
+    background: white;
+    border: 1px solid #707070;
+    color: #707070;
+    margin-bottom: -2px;
+}
+
+/* Jumbotron Ends */
+
+/* About me */
+.container .about h2 {
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .about .img-about-wrapper {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2px auto 30px;
+}
+
+.container .about h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.container .about h6 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+
+}
+
+.container .about p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/* About me ends */
+
+/* Portfolio  */
+
+.container .portfolio h2 {
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .portfolio ul {
+    list-style: none;
+}
+
+.container .portfolio ul li {
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.container .portfolio ul li:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #707070;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+/* Gallery */
+
+
+/* Portfolio ends  */
+
+/* blog */
+
+.container .blog {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .blog h2 {
+    font-weight: 500;
+
+}
+
+.container .blog .blog-content {
+    background: url(../img/blog.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.separator {
+    margin: 250px auto;
+}
+
+.container .blog .blog-content .text-box {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.container .blog .blog-content .text-box p {
+    color: #4d4d4d;
+    padding: 10px 5px;
+}
+
+.container .blog .blog-content .text-box .btn {
+    background: #4d4d4d;
+    color: rgb(233, 233, 233);
+    border-radius: 30px;
+}
+
+.container .blog .blog-content .text-box .btn:hover {
+    background: white;
+    color: #4d4d4d;
+    border-radius: 30px;
+    border: 1px solid #4d4d4d;
+}
+
+.container .blog .blog-content .text-box .share {
+    font-size: 20px;
+    color: #4d4d4d;
+    padding-top: 20px;
+    margin-bottom: -15px;
+}
+
+.container .blog .blog-content .text-box .social-button {
+
+    padding-bottom: 10px;
+}
+
+/* blog ends */
+
+/* Testimonials */
+.container .testimonial {
+
+    background: #4d4d4d;
+    color: white;
+    text-align: center;
+}
+
+.container .testimonial h4 {
+    margin-top: 20px;
+
+}
+
+.container .testimonial .img-testi-wrapper {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+
+}
+
+
+
+.container .testimonial .img-testi-wrapper .test2 {
+    height: 300px;
+    transform: translateX(-130px);
+
+}
+
+.container .testimonial .client-name {
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+.container .testimonial .client-occasion {
+    font-size: 15px !important;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.container .testimonial .client-say {
+    font-weight: 300 !important;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.slider {
+    width: 30px;
+    height: 3px;
+    background: #FBFBFB;
+    margin: 1px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.slider .active {
+    width: 40px;
+}
+
+/* Testimonials ends */
+
+
+/* moment */
+
+.container .breakdown {
+    padding: 20px;
+    text-align: center;
+}
+
+/* moment ends */
+
+/* contact me */
+
+
+.container .contact {
+    background: url(../img/contact.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 10px;
+}
+
+.container .contact .btn {
+    background: #4d4d4d;
+    color: white;
+    border-radius: 20px;
+}
+
+
+/* contact me ends */
+
+/* footer */
+footer {
+    background: #4d4d4d;
+    padding: 10px;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 400;
+}
+
+
+/* footer ends */
+
+
+/* Media Query */
+
+/* Tablet Version */
+@media (min-width: 768px) {
+
+    .navbar .btn {
+        width: 13%;
+    }
+
+    .nav-link {
+        margin-right: 20px;
+
+    }
+
+    .nav-link::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #707070;
+        width: 0%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        transition: 0.2s;
+    }
+
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #707070;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        opacity: 1;
+    }
+
+    .jumbotron {
+        background: url(../img/headline.png) no-repeat;
+        height: 400px;
+        background-position: right;
+        background-size: contain;
+        background-color: #FFFFFD;
+    }
+
+    .jumbotron h1 {
+        margin-top: 100px;
+        font-weight: 700;
+    }
+
+    .jumbotron .lead {
+        font-size: 24px;
+        margin-top: -20px;
+
+
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container .testimonial .client-detail {
+        margin-top: 20px;
+
+    }
+
+    .jumbotron {
+        background: url(../img/headline.png) no-repeat;
+        height: 400px;
+        background-position: right;
+        background-color: #FFFFFD;
+        margin-top: 45px;
+    }
+
+    .jumbotron h1 {
+        margin-top: 60px;
+        margin-left: 80px;
+    }
+
+    .jumbotron .lead {
+        margin-left: 80px;
+    }
+
+    .jumbotron .btn {
+        margin-left: 80px;
+
+
+    }
+
+    .container .breakdown {
+        padding: 60px;
+        text-align: center;
+    }
+
+    .container .breakdown .moment {
+        margin: 0 auto;
+    }
+
+}
