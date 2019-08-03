@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="home">
     <!-- Container -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -26,20 +26,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home </a>
+                        <a class="nav-link scroll" href="#home">Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link scroll" href="#about">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link scroll" href="#blog">Blog</a>
                     </li>
                 </ul>
 
-                <button class="btn" type="submit">Contact</button>
+                <a href="#contact" class="btn scroll">Contact</a>
 
             </div>
         </div>
@@ -58,7 +58,7 @@
 
     <div class="container">
         <!-- about me -->
-        <div class="row about">
+        <div class="row about" id="about">
             <!-- about me -->
             <div class="col-md-12">
                 <h2>About Me</h2>
@@ -74,7 +74,7 @@
             </div>
         </div>
         <!-- Gallery Portfolio -->
-        <div class="row portfolio">
+        <div class="row portfolio" id="portfolio">
             <div class="col-md-12">
                 <h2>Portfolio</h2>
                 <ul>
@@ -146,7 +146,7 @@
         </div>
 
         <!-- blog -->
-        <div class="row blog">
+        <div class="row blog" id="blog">
             <div class="col-md-12">
                 <h2 class="">Blog</h2>
             </div>
@@ -180,7 +180,7 @@
         </div>
 
         <!-- testimonials -->
-        <div class="bd-example testimonial mt-n4 mb-4">
+        <div class="bd-example testimonial mt-n4 mb-4 " id="testi">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel ">
                 <ol class="carousel-indicators arahan">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -263,7 +263,7 @@
             <h3 class="moment">Want me to capture your moment?</h3>
         </div>
         <!-- Contact me -->
-        <div class="row contact">
+        <div class="row contact" id="contact">
             <div class="col-md-6">
                 <form>
                     <div class="col-md-6">
@@ -336,6 +336,9 @@
                 $(this).removeClass("active-gallery");
             }
             $(this).addClass("active-gallery");
+
+
+
         });
     </script>
 
